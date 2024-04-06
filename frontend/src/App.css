@@ -1,0 +1,249 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+/* App.css */
+
+.logo-image {
+  width: 200px; /* 로고 이미지의 너비 */
+  height: auto; /* 로고 이미지의 높이를 자동으로 조절하여 비율 유지 */
+  margin-right:10px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Palatino Linotype', sans-serif;
+  font-size:23px;
+}
+
+.container2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Palatino Linotype', sans-serif;
+  font-size:23px;
+}
+
+
+
+.search-input {
+  width: 370px;
+  height: 37px;
+  text-align: left;
+  border:none;
+}
+
+.border{
+  border:2px solid #007bff;
+}
+
+.search-button {
+  width:70px;
+  height: 39px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.register-button {
+  height: 34px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Palatino Linotype', sans-serif;
+  font-size:23px;
+  
+}
+
+.button-mypage {
+  width: 100px; /* 원하는 너비 값으로 설정 */
+  height: 40px; /* 원하는 높이 값으로 설정 */
+  font-size: 14px; /* 원하는 글꼴 크기로 설정 */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.button-cart {
+  width: 100px; /* 원하는 너비 값으로 설정 */
+  height: 40px; /* 원하는 높이 값으로 설정 */
+  font-size: 14px; /* 원하는 글꼴 크기로 설정 */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+
+
+
+/* 카테고리 버튼 */
+.category-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* 카테고리 목록 */
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.category-list li {
+  padding: 10px;
+}
+
+.category-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.content-title{
+  padding: 10px 20px;
+    border-bottom: 1px solid #f2f2f2;
+    line-height: 1.5;
+  font-size: 21px;
+    font-weight: bold;
+    color: #222;
+}
+.container3{
+  width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    border-top: none;
+    margin-top: 40px;
+}
+
+.content_title_sub {
+  font-size: 17px;
+  color: #ff3912;
+  padding-left: 10px;
+}
+.login {
+  display: flex;
+  justify-content: flex-end; /* 요소들을 플렉스 컨테이너 오른쪽 끝으로 정렬 */
+  text-decoration: none;
+  font-size:12px;
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  border-top: none;
+  font-family: sans-serif;
+  
+}
+.sign-up{
+  margin-left: 10px;
+}
+
+.product-item {
+  margin-bottom: 20px; /* 각 제품 항목 사이의 간격 조절 */
+  
+}
+
+.product-image {
+  width: 100%; /* 이미지가 부모 요소의 100%를 차지하도록 설정 */
+  height: auto; /* 가로 세로 비율 유지 */
+  background-color: #f2f2f2; /* 회색 바탕색 설정 */
+}
+
+.product-details {
+  padding: 10px; /* 제품 정보의 패딩 설정 */
+}
+
+.product-name {
+  margin-bottom: 5px; /* 제품 이름과 설명 사이의 간격 조절 */
+  font-size: 14px;
+  font-family: 맑은고딕;
+}
+
+.product-description {
+  margin-bottom: 5px; /* 설명과 가격 사이의 간격 조절 */
+}
+
+.product-price {
+  position: relative;
+  }
+  
+  .product-price::before {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #888888; /* 선의 색상 */
+  }
+  .product-discount{
+    
+    font-size: 14px;
+    color: #111;
+    font-family: 맑은고딕;
+
+  }
+  .product-price {
+  font-size: 14px;
+  color: #888;
+  
+  }
+.discounted-price{
+  font-size: 24px;
+  color: #cb1400;
+  font-weight: 700;
+  font-weight: bold; /* 제품 이름을 굵게 표시 */  
+
+    
+}
+.unit-price{
+  font-size: 14px;
+  color: #cb1400;
+}
+
+.product-delivery-date{
+  font-size: 14px;
+  font-family: 맑은고딕;
+  color:#212B36;
+}
