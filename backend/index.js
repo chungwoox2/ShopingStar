@@ -1,25 +1,26 @@
 // Express 및 CORS 모듈 가져오기
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 
 // 제품 라우트 파일 가져오기
 const productPostRoutes = require('./routes/productPost');
 const productGetRoutes = require('./routes/productGet'); // productGet.js 파일 추가
 
-// Express 애플리케이션 생성
+
 const app = express();
 
-// CORS 미들웨어 추가
-app.use(cors());
 
-// JSON 파싱을 위한 미들웨어 추가
+app.use(cors());
 app.use(express.json());
 
-// 제품 POST 라우트 추가
+app.use(express.static(path.join(__dirname, '/build')));
+
 app.use('/api/products/post', productPostRoutes);
+app.use('/api/products/get', productGetRoutes); 
 
-// 제품 GET 라우트 추가
-app.use('/api/products/get', productGetRoutes); // productGet.js 파일 추가
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/build', 'index.html'));
+  });
 
-// Express 애플리케이션을 모듈로 내보내기
 module.exports = app;
