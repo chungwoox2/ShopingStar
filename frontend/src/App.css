@@ -18,128 +18,69 @@
 }
 /* App.css */
 
-.logo-image {
-  width: 200px; /* 로고 이미지의 너비 */
-  height: auto; /* 로고 이미지의 높이를 자동으로 조절하여 비율 유지 */
-  margin-right:10px;
+
+.header-container {
+  display: flex;
+  justify-content: center;
 }
-.container {
+
+.header-container2 {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-family: 'Palatino Linotype', sans-serif;
-  font-size:23px;
 }
 
-.container2{
+.header-logo-image {
+  width: 150px;
+  height: auto;
+}
+
+.header-border {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-family: 'Palatino Linotype', sans-serif;
-  font-size:23px;
-}
-
-
-
-.search-input {
-  width: 370px;
-  height: 37px;
-  text-align: left;
-  border:none;
-}
-
-.border{
-  border:2px solid #007bff;
-}
-
-.search-button {
-  width:70px;
-  height: 39px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  
-}
-
-.register-button {
-  height: 34px;
-  background-color: #28a745;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-
-.button-container {
-  display: flex;
-  justify-content: center;
-}
-
-.button-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Palatino Linotype', sans-serif;
-  font-size:23px;
-  
-}
-
-.button-mypage {
-  width: 100px; /* 원하는 너비 값으로 설정 */
-  height: 40px; /* 원하는 높이 값으로 설정 */
-  font-size: 14px; /* 원하는 글꼴 크기로 설정 */
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.button-cart {
-  width: 100px; /* 원하는 너비 값으로 설정 */
-  height: 40px; /* 원하는 높이 값으로 설정 */
-  font-size: 14px; /* 원하는 글꼴 크기로 설정 */
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  
-}
-
-
-
-
-/* 카테고리 버튼 */
-.category-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-/* 카테고리 목록 */
-.category-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  padding: 5px;
 }
 
-.category-list li {
+.header-search-input {
+  width: 550px;
+  flex: 1;
+  border: none;
   padding: 10px;
+  font-size: 16px;
+  outline: none;
 }
 
-.category-list li:hover {
-  background-color: #f0f0f0;
+.header-search-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.header-button-right {
+  display: flex;
+  align-items: center;
+  margin-left:0px;
+}
+
+.header-button-mypage,
+.header-button-cart {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.header-button-mypage:hover,
+.header-button-cart:hover {
+  background-color: #0056b3;
 }
 
 .content-title{

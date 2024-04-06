@@ -36,37 +36,38 @@ function App() {
         <span className='sign-up'>회원가입</span>
       </div>
 
-      <div className="container">
-        <div className='container2'>
-        <span><img src="/images/logo_text4.png" alt="" className="logo-image" /></span>
+      <div className="header-container">
+  <div className='header-container2'>
+    <span><img src="/images/logo_text4.png" alt="" className="header-logo-image" /></span>
 
-        <div className='border'>
-          <input 
-            type="text" 
-            className="search-input"
-            placeholder="찾고 싶은 상품을 검색해보세요!" 
-          />
-          <button className="search-button">
-            <FontAwesomeIcon icon={faSearch} />
-          </button>
-        </div>
-        </div>
+    <div className='header-border'>
+      <input 
+        type="text" 
+        className="header-search-input"
+        placeholder="찾고 싶은 상품을 검색해보세요!" 
+      />
+      <button className="header-search-button">
+        <FontAwesomeIcon icon={faSearch} />
+      </button>
+    </div>
+  </div>
 
-        <div className='button-right'>
-        <Link to="/mypage">
-          <button className="button-mypage">
-            <FontAwesomeIcon icon={faUser} />
-            마이페이지
-          </button>
-        </Link>
-        <Link to="/cart">
-          <button className="button-cart">
-            <FontAwesomeIcon icon={faShoppingCart} />
-            장바구니
-          </button>
-        </Link>
-      </div>
-      </div>
+  <div className='header-button-right'>
+    <Link to="/mypage">
+      <button className="header-button-mypage">
+        <FontAwesomeIcon icon={faUser} />
+        마이페이지
+      </button>
+    </Link>
+    <Link to="/cart">
+      <button className="header-button-cart">
+        <FontAwesomeIcon icon={faShoppingCart} />
+        장바구니
+      </button>
+    </Link>
+  </div>
+</div>
+
       
       <div className='container3'>
         <div className='content-title'>
