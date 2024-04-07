@@ -33,6 +33,7 @@ function ProductDetail() {
       <p>할인율: {product.discount}%</p>
       <p>할인 적용 가격: {parseInt(((product.price) * (100 - (product.discount))) / 100)}원</p>
       {/* 기타 상품 정보를 여기에 추가할 수 있습니다. */}
+      <div>갈갈비할!!</div>
     </div>
   );
 }
