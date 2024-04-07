@@ -1,9 +1,13 @@
+// App.js
+
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './pages/Header';
-import MainPage from './pages/Main';
+import Main from './pages/Main';
 import ProductForm from './pages/ProductForm';
 import ProductDetail from './pages/ProductDetail';
+import myPage from './pages/mypage'; // MyPage 컴포넌트 import
+import cart from './pages/cart'; // Cart 컴포넌트 import
 import './App.css';
 
 function App() {
@@ -39,15 +43,12 @@ function App() {
         </div>
       </div>
 
-      <Link to="/product/add">
-        <button className="register-button">상품 등록</button>
-      </Link>
-
-      <MainPage products={products} />
-
       <Routes>
+        <Route path="/" element={<Main products={products} />} />
         <Route path="/product/add" element={<ProductForm />} />
-        <Route path="/product/detail/:id" element={<ProductDetail />} />
+        <Route path="/products/detail/:id" element={<ProductDetail />} />
+        <Route path="/mypage" element={<myPage/>} /> 
+        <Route path="/cart" element={<cart/>} /> 
       </Routes>
     </Router>
   );

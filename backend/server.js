@@ -1,4 +1,4 @@
-const express = require('express');
+
 const { sequelize } = require('./config/database'); // 데이터베이스 연결 설정 가져오기
 
 const PORT = process.env.PORT;

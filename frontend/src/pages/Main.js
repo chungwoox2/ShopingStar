@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const MainPage = ({ products }) => {
+const Main = ({ products }) => {
   return (
     <Container>
       <Row>
@@ -19,7 +19,9 @@ const MainPage = ({ products }) => {
 
           return (
             <Col key={product.id} lg={3} md={6} sm={12}>
-              <Link to={`/product/detail/${product.id}`} style={{ textDecoration: 'none' }}>
+              {/* Link 컴포넌트를 사용하여 상품 상세 페이지로 이동 */}
+              <Link to={`/products/detail/${product.id}`} style={{ textDecoration: 'none' }}>
+              
                 <div className="product-item">
                   <img src={product.image_url} alt={product.name} className="product-image" />
                   <div className="product-details">
@@ -59,4 +61,4 @@ const MainPage = ({ products }) => {
   );
 };
 
-export default MainPage;
+export default Main;
