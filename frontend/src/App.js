@@ -1,13 +1,11 @@
-// App.js
-
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './pages/Header';
 import Main from './pages/Main';
 import ProductForm from './pages/ProductForm';
 import ProductDetail from './pages/ProductDetail';
-import myPage from './pages/mypage'; // MyPage 컴포넌트 import
-import cart from './pages/cart'; // Cart 컴포넌트 import
+import MyPage from './pages/mypage'; // MyPage 컴포넌트 import
+import Cart from './pages/cart'; // Cart 컴포넌트 import
 import './App.css';
 
 function App() {
@@ -47,8 +45,8 @@ function App() {
         <Route path="/" element={<Main products={products} />} />
         <Route path="/product/add" element={<ProductForm />} />
         <Route path="/products/detail/:id" element={<ProductDetail />} />
-        <Route path="/mypage" element={<myPage/>} /> 
-        <Route path="/cart" element={<cart/>} /> 
+        <Route path="/mypage" element={<MyPage />} /> {/* MyPage 컴포넌트 라우트 */}
+        <Route path="/cart" element={<Cart />} /> {/* Cart 컴포넌트 라우트 */}
       </Routes>
     </Router>
   );
