@@ -30,33 +30,30 @@
 }
 
 .header-logo-image {
-  width: 150px;
+  width:170px;
   height: auto;
 }
 
 .header-border {
   display: flex;
   align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 5px;
+  
 }
 
 .header-search-input {
   width: 550px;
   flex: 1;
-  border: none;
+  border: 1px solid black;
+  border-radius: 10px;
   padding: 10px;
   font-size: 16px;
   outline: none;
 }
 
 .header-search-button {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #fff;
+  color: black;
   border: none;
-  border-radius: 5px;
-  padding: 10px;
   margin-left: 5px;
   cursor: pointer;
 }
@@ -69,18 +66,16 @@
 
 .header-button-mypage,
 .header-button-cart {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #fff;
+  color: black;
   border: none;
-  border-radius: 5px;
-  padding: 10px;
-  margin-left: 10px;
   cursor: pointer;
 }
 
 .header-button-mypage:hover,
 .header-button-cart:hover {
-  background-color: #0056b3;
+  background-color: #fff;
+  color: black;
 }
 
 .content-title{

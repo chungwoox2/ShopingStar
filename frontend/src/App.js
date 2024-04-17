@@ -4,10 +4,13 @@ import Header from './pages/Header';
 import Main from './pages/Main';
 import ProductForm from './pages/ProductForm';
 import ProductDetail from './pages/ProductDetail';
-import MyPage from './pages/mypage'; // MyPage 컴포넌트 import
-import Cart from './pages/cart'; // Cart 컴포넌트 import
+import MyPage from './pages/mypage'; 
+import Cart from './pages/cart'; 
+import SignUpForm from './pages/SignUpForm'; 
+import { Link } from 'react-router-dom';
 import './App.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 function App() {
   const [products, setProducts] = useState([]);
 
@@ -29,8 +32,25 @@ function App() {
     <Router>
       <div className="login">
         로그인
-        <span className="sign-up">회원가입</span>
+        <Link to="/signup" style={{ textDecoration: 'none' }}>회원가입</Link>
+
+        <div className="header-button-right">
+        <Link to="/mypage">
+          <button className="header-button-mypage">
+            <FontAwesomeIcon icon={faUser} />
+            
+          </button>
+        </Link>
+        <Link to="/cart">
+          <button className="header-button-cart">
+            <FontAwesomeIcon icon={faShoppingCart} />
+            
+          </button>
+        </Link>
       </div>
+      </div>
+
+      
 
       <Header />
 
@@ -47,6 +67,7 @@ function App() {
         <Route path="/products/detail/:id" element={<ProductDetail />} />
         <Route path="/mypage" element={<MyPage />} /> {/* MyPage 컴포넌트 라우트 */}
         <Route path="/cart" element={<Cart />} /> {/* Cart 컴포넌트 라우트 */}
+        <Route path="/signup" element={<SignUpForm />} /> {/* Cart 컴포넌트 라우트 */}
       </Routes>
     </Router>
   );

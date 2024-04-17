@@ -1,9 +1,8 @@
 
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   return (
@@ -25,20 +24,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="header-button-right">
-        <Link to="/mypage">
-          <button className="header-button-mypage">
-            <FontAwesomeIcon icon={faUser} />
-            마이페이지
-          </button>
-        </Link>
-        <Link to="/cart">
-          <button className="header-button-cart">
-            <FontAwesomeIcon icon={faShoppingCart} />
-            장바구니
-          </button>
-        </Link>
-      </div>
+      
     </div>
   );
 };
