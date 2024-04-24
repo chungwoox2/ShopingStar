@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
-import '../styles/style.css'; // CSS 파일 import
+import '../styles/style.css';
 
 const ProductForm = () => {
   const [formData, setFormData] = useState({

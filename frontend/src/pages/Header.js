@@ -2,10 +2,35 @@
 
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
-
+import { faSearch, faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 const Header = () => {
   return (
+    <div>
+      <ul className='header-userbox'>
+      <div className="header-login">
+        로그인
+      </div>
+        <Link to="/signup" style={{ textDecoration: 'none' }}>회원가입</Link>
+
+        <div>
+        <Link to="/mypage">
+          <button className="header-mypage">
+            <FontAwesomeIcon icon={faUser} />
+            마이페이지
+          </button>
+        </Link>
+        </div>
+
+        <Link to="/cart">
+          <button className="header-shopping-basket">
+            <FontAwesomeIcon icon={faShoppingCart} />
+            장바구니
+          </button>
+        </Link>
+      </ul>
+    
+
     <div className="header-container">
       <div className="header-container2">
         <span>
@@ -24,7 +49,7 @@ const Header = () => {
         </div>
       </div>
 
-      
+      </div>
     </div>
   );
 };

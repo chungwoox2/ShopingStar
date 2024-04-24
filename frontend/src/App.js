@@ -7,10 +7,8 @@ import ProductDetail from './pages/ProductDetail';
 import MyPage from './pages/mypage'; 
 import Cart from './pages/cart'; 
 import SignUpForm from './pages/SignUpForm'; 
-import { Link } from 'react-router-dom';
-import './App.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import './styles/App.css'; 
+
 function App() {
   const [products, setProducts] = useState([]);
 
@@ -30,28 +28,6 @@ function App() {
 
   return (
     <Router>
-      <div className="login">
-        로그인
-        <Link to="/signup" style={{ textDecoration: 'none' }}>회원가입</Link>
-
-        <div className="header-button-right">
-        <Link to="/mypage">
-          <button className="header-button-mypage">
-            <FontAwesomeIcon icon={faUser} />
-            
-          </button>
-        </Link>
-        <Link to="/cart">
-          <button className="header-button-cart">
-            <FontAwesomeIcon icon={faShoppingCart} />
-            
-          </button>
-        </Link>
-      </div>
-      </div>
-
-      
-
       <Header />
 
       <div className="container3">
