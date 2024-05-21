@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './pages/Header';
-import Main from './pages/Main';
-import ProductForm from './pages/ProductForm';
-import ProductDetail from './pages/ProductDetail';
-import MyPage from './pages/mypage'; 
-import Cart from './pages/cart'; 
-import SignUpForm from './pages/SignUpForm'; 
+import Header from './component/Header';
+import Main from './component/Main';
+import ProductForm from './component/ProductForm';
+import ProductDetail from './component/ProductDetail';
+import MyPage from './component/mypage'; 
+import Cart from './component/cart'; 
+import SignUpForm from './component/SignUpForm'; 
 import './styles/App.css'; 
 
 function App() {
